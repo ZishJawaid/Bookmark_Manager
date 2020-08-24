@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/base'
+require './lib/bookmarks.rb'
 
 class BookmarkManager < Sinatra::Base
 
@@ -8,7 +9,8 @@ class BookmarkManager < Sinatra::Base
     end
 
     get '/bookmarks' do
-        "http://avforums.com"
+        @bookmark = Bookmarks.all.join
+        erb :view
     end
 
 run! if app_file == $0

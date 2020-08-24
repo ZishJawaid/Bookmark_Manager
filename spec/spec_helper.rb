@@ -10,6 +10,7 @@ require 'capybara/rspec'
 require 'rspec'
 require 'rubocop'
 require 'simplecov'
+require 'shotgun'
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
