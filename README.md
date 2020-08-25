@@ -7,18 +7,24 @@
 #So that I can see the URL's I've visited,
 #I would like to be able to see a list of bookmarks
 
-### To set up the database
+### To set up the development and test databases
 
-Connect to `psql` and create the `bookmark_manager` database using the psql command:
+**Steps for development database**
+
+1. Connect to `psql` and create the `bookmark_manager` database using the psql command:
 
 ```
 CREATE DATABASE bookmark_manager;
 ```
 
-To set up the appropriate tables, connect to the database in `psql`:
+2. To set up the appropriate tables, connect to the database in `psql`:
 
 ```
 \c bookmark_manager
 
 ```
-The run the SQL scripts in the `db/migrations` folder in the given order.
+3. Then run the SQL scripts in the `db/migrations` folder in the given order.
+
+**Steps for test database**
+
+Repeat steps as above, but create a database called 'bookmark_manager_test' in step 1.

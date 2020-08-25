@@ -6,10 +6,11 @@ class BookmarkManager < Sinatra::Base
 
     get '/' do
         "Bookmark Manager"
+        
     end
 
     get '/bookmarks' do
-        @bookmark = Bookmarks.all.join
+        @bookmark = Bookmarks.all.join(", ")
         erb :view
     end
 
