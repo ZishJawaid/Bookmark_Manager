@@ -5,8 +5,10 @@ describe Bookmarks do
         expect(Bookmarks.all).to be_an_instance_of(Array)
     end
 
-    it 'return a bookmark' do
-        expect(Bookmarks.all).to include("http://avforums.com")
+    it 'returns a bookmark' do
+        expect(Bookmarks.all).to include("http://avforums.co.uk")
+        expect(Bookmarks.all).to include("http://pistonheads.com")
+        expect(Bookmarks.all).to include("http://amgclub")
     end
 
 end

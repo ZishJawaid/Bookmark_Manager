@@ -6,7 +6,9 @@ feature 'Viewing bookmarks'do
 
     scenario 'Viewing a list of bookmarks' do
         visit('/bookmarks')
-        expect(page).to have_content "http://avforums.com"
+        expect(page).to have_content "http://avforums.co.uk"
+        expect(page).to have_content "http://pistonheads.com"
+        expect(page).to have_content "http://amgclub"
     end
 
 end
