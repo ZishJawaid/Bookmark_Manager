@@ -11,7 +11,16 @@ So that I can see the URL's I've visited,
 I would like to be able to see a list of bookmarks
 ```
 
-### To set up the development and test databases
+##### User story 2
+
+```
+As a user 
+So that I can add new websites to the list
+I would like to add a bookmark to the Bookmark Manager DB
+
+```
+
+#### To set up the development and test databases
 
 
 1. Connect to `psql` and create the `bookmark_manager` database using the psql command:
