@@ -19,7 +19,14 @@ So that I can add new websites to the list
 I would like to add a bookmark to the Bookmark Manager DB
 
 ```
+##### User story 3
 
+```
+As a user 
+So that I can remove websites from the list
+I would like to delete a bookmark from the Bookmark Manager DB
+
+```
 #### To set up the development and test databases
 
 
